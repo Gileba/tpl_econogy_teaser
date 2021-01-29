@@ -15,5 +15,6 @@
 		<filename>templateDetails.xml</filename>
 		<folder>css</folder>
 		<folder>fonts</folder>
+		<folder>images</folder>
 	</files>
 </extension>
