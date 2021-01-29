@@ -5,12 +5,7 @@ redistribute, convert, modify or reverse engineer this font software. Please con
 Imaging with any questions regarding Web Fonts:  http://www.fonts.com
 */
 
-@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=f7fa9674-682f-4997-8758-ca717cda36d4");
-@font-face{
-	font-family:"Regulator Nova W05 Medium";
-	src:url("../fonts/9919f6a5-7cee-4e14-855f-a52e485f5f2b.woff2") format("woff2"),url("../fonts/408091b4-ae2d-4f60-b985-f0091697c215.woff") format("woff");
-}
-
 body {
-	font-family: "Regulator Nova W05 Medium";
+	font-family: "regulator-nova";
+	font-weight: 600;
 }

@@ -41,6 +41,7 @@ $sitename = htmlspecialchars($app->get('sitename'), ENT_QUOTES, 'UTF-8');
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<jdoc:include type="head" />
+	<link rel="stylesheet" href="https://use.typekit.net/wbb6jqc.css">
 </head>
 <body class="site">
 	<div class="outer">
