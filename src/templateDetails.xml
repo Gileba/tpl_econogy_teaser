@@ -17,4 +17,8 @@
 		<folder>fonts</folder>
 		<folder>images</folder>
 	</files>
+	<positions>
+		<position>header</position>
+		<position>main</position>
+	</positions>
 </extension>

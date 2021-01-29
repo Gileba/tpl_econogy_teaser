@@ -5,7 +5,33 @@ redistribute, convert, modify or reverse engineer this font software. Please con
 Imaging with any questions regarding Web Fonts:  http://www.fonts.com
 */
 
+:root {
+	--primary-green: rgb(0,172,167);
+	--primary-orange: rgb(243, 90, 48);
+	--primary-black: rgb(11, 10, 13)
+}
+
 body {
 	font-family: "regulator-nova";
 	font-weight: 600;
+	margin: 0;
+	color: var(--primary-black);
+}
+
+.main {
+	margin: 0 100px 50px 100px;
+	letter-spacing: 0.1em;
+}
+
+.main h1 {
+	letter-spacing: 0.2em;
+	text-align: center;
+	width: 60%;
+	margin: 50px auto;
+	font-size: 2.5em;
+}
+
+.main .custom div {
+	column-count: 2;
+	column-gap: 70px;
 }

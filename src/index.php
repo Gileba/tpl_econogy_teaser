@@ -28,6 +28,16 @@
 		<link rel="stylesheet" href="https://use.typekit.net/wbb6jqc.css">
 	</head>
 	<body class="<?php echo $pageclass ? htmlspecialchars($pageclass) : 'default'; ?>">
-		<div class="container"></div>
+		<div class="container">
+			<div class="header">
+				<jdoc:include type="modules" name="header" />
+			</div>
+			<div class="main">
+				<jdoc:include type="modules" name="main" />
+			</div>
+			<div class="messages">
+				<jdoc:include type="message" />
+			</div>
+		</div>
 	</body>
 </html>
