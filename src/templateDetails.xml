@@ -14,5 +14,6 @@
 		<filename>offline.php</filename>
 		<filename>templateDetails.xml</filename>
 		<folder>css</folder>
+		<folder>fonts</folder>
 	</files>
 </extension>
