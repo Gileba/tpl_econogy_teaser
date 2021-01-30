@@ -32,6 +32,9 @@
 			<div class="header">
 				<jdoc:include type="modules" name="header" />
 			</div>
+			<div class="messages">
+				<jdoc:include type="message" />
+			</div>
 			<div class="main">
 				<jdoc:include type="modules" name="main" />
 			</div>
@@ -41,8 +44,8 @@
 			<div class="producten">
 				<jdoc:include type="modules" name="producten" />
 			</div>
-			<div class="messages">
-				<jdoc:include type="message" />
+			<div class="statistieken">
+				<jdoc:include type="modules" name="statistieken" />
 			</div>
 		</div>
 	</body>
