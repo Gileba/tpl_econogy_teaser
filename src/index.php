@@ -35,6 +35,9 @@
 			<div class="main">
 				<jdoc:include type="modules" name="main" />
 			</div>
+			<div class="verticaal">
+				<jdoc:include type="modules" name="verticaal" />
+			</div>
 			<div class="messages">
 				<jdoc:include type="message" />
 			</div>

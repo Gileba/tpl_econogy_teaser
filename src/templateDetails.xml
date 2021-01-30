@@ -20,5 +20,6 @@
 	<positions>
 		<position>header</position>
 		<position>main</position>
+		<position>verticaal</position>
 	</positions>
 </extension>

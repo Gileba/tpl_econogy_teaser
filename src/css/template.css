@@ -35,3 +35,48 @@ body {
 	column-count: 2;
 	column-gap: 70px;
 }
+
+.verticaal {
+	display: flex;
+	margin: 0 100px;
+}
+
+.verticaal div.custom {
+	background-color: var(--primary-green);
+	color: white;
+	max-width: 30%;
+	padding: 10px 20px 0px 20px;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.verticaal div.custom h2 {
+	text-align: right;
+	text-transform: lowercase;
+	font-size: 2.5em;
+	font-weight: 600;
+	margin-block-start: 0.1em;
+	margin-block-end: 0;
+}
+
+.verticaal div.custom h3 {
+	opacity: 0.5;
+	text-transform: uppercase;
+	font-size: 4em;
+	font-weight: 600;
+	margin-block-start: 0;
+	margin-block-end: 0.1em;
+}
+
+.verticaal div.custom div {
+	font-size: 1.8em;
+}
+
+.verticaal div:nth-child(2) {
+	margin: 0 20px;
+}
+
+.verticaal div.icoon {
+	justify-self: flex-end;
+}
