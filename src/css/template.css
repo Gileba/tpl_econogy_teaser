@@ -80,3 +80,39 @@ body {
 .verticaal div.icoon {
 	justify-self: flex-end;
 }
+
+.producten .custom {
+	margin-top: 50px;
+}
+
+.producten .custom > div {
+	padding-top: 600px;
+	padding-bottom: 20px;
+}
+
+.product-container {
+	display: flex;
+	margin: 0 20px;
+	padding: 50px 20px;
+}
+
+.product-container.orange {
+	background-color: var(--primary-orange);
+}
+
+.product-container.green {
+	background-color: var(--primary-green);
+}
+
+.product-container div {
+	max-width: 50%;
+}
+
+.product-container .logo img {
+	max-width: 100%;
+}
+
+.product-container .text {
+	font-size: 1.8em;
+	padding: 0 20px;
+}
