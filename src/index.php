@@ -47,6 +47,9 @@
 			<div class="statistieken">
 				<jdoc:include type="modules" name="statistieken" />
 			</div>
+			<div class="footer">
+				<jdoc:include type="modules" name="footer" />
+			</div>
 		</div>
 	</body>
 </html>
