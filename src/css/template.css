@@ -32,16 +32,38 @@ body {
 .verticaal, .statistieken {
 	display: flex;
 	margin: 0 100px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 1400px) {
+	.verticaal, .statistieken {
+		justify-content: space-evenly;
+	}
 }
 
 .verticaal div.custom {
 	background-color: var(--primary-green);
 	color: white;
-	max-width: 30%;
+	min-width: 360px;	
+	max-width: 100%;
 	padding: 10px 20px 0px 20px;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
+	margin-top: 50px;
+}
+
+@media screen and (min-width: 800px) {
+	.verticaal div.custom {
+		max-width: 40%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.verticaal div.custom {
+		max-width: 25%;
+	}
 }
 
 .verticaal div.custom h2 {
@@ -64,14 +86,14 @@ body {
 
 .verticaal div.custom div {
 	font-size: 1.8em;
+	margin-bottom: 30px;
 }
 
-.verticaal div:nth-child(2) {
-	margin: 0 20px;
-}
-
-.verticaal div.icoon {
+.verticaal div.custom div.icoon {
 	justify-self: flex-end;
+	margin-top: auto;
+	margin-bottom: 10px;
+	text-align: center;
 }
 
 .producten .custom {
@@ -117,8 +139,20 @@ body {
 
 .statistieken div.custom {
 	font-size: 1.3em;
-	width: 30%;
+	width: 100%;
 	padding: 10px 20px 0px 20px;
+}
+
+@media screen and (min-width: 800px) {
+	.statistieken div.custom {
+		max-width: 40%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.statistieken div.custom {
+		max-width: 25%;
+	}
 }
 
 .statistieken h3 {
@@ -136,7 +170,7 @@ body {
 }
 
 .statistieken .title {
-	min-height: 40px;
+	min-height: 60px;
 }
 
 .footer {
