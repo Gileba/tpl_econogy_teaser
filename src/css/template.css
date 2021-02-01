@@ -185,6 +185,12 @@ body {
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	.statistieken div.custom {
+		margin-bottom: 75px;
+	}
+}
+
 .statistieken h3 {
 	color: var(--primary-green);
 	font-size: 2em;
@@ -199,12 +205,20 @@ body {
 	max-width: 100%
 }
 
+@media screen and (max-width: 1200px) {
+	.statistieken .icoon img {
+		padding-top: 10px;
+	}
+}
+
 .statistieken .title {
 	min-height: 60px;
 }
 
 .footer {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	margin-top: 50px;
 	border-top: var(--primary-orange) 8px solid;
 }
@@ -216,8 +230,17 @@ body {
 
 .footer .logo {
 	background-color: white;
-	max-width: 30%;
 	padding: 25px;
+}
+
+@media screen and (min-width: 800px) {
+	.footer .custom.logo {
+		max-width: 25%;
+	}
+	
+	.footer .custom {
+		max-width: 65%;
+	}
 }
 
 .footer .logo img {
@@ -240,4 +263,107 @@ body {
 	min-width: 200px;
 	max-width: 33%;
 	margin-bottom: 25px;
+}
+
+.convertforms {
+	margin-top: 50px;
+}
+
+.convertforms .cf-form-wrap {
+	width: 80%;
+	margin: auto;
+}
+
+.contact .cf-form-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.contact .intro h1 {
+	margin-block-start: 0;
+}
+
+.contact .cf-form-wrap .intro {
+	width: 50%;
+}
+
+.contact .cf-form-wrap .cf-fields {
+	width: 50%;
+}
+
+.convertforms .intro {
+	margin: 0 auto;
+}
+
+.newsletter .intro {
+	color: white;
+}
+
+.convertforms .intro h1 {
+	letter-spacing: 0.1em;
+	font-size: 3em;
+}
+
+.convertforms .intro div {
+	font-size: 2em;
+}
+
+.newsletter .intro div {
+	width: 50%;
+}
+
+.newsletter .cf-fields {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	border-radius: 15px;
+	margin: 50px auto;
+	background: white;
+}
+
+.newsletter .cf-fields .cf-control-group {
+	padding: 3px;
+	width: auto;
+}
+
+.newsletter  .cf-fields .cf-control-group.email {
+	flex-grow: 10;
+}
+
+.newsletter .cf-fields .cf-control-group .cf-input {
+	border: none;
+}
+
+.convertforms .cf-fields .cf-control-group button {
+	font-weight: 600;
+}
+
+.contact .cf-control-group[data-type="textarea"] textarea {
+	border: none;
+	resize: none;
+}
+
+.contact .message {
+	border-radius: 15px;
+	border: #ccc 3px solid;
+	margin: 5px 10px;
+	width: 100%;
+}
+
+.contact .message textarea {
+	padding: 3px 10px 10px 0 !important;
+}
+
+.contact div[data-type="submit"] {
+	padding: 3px;
+}
+
+input, button, textarea {
+	font-size: 1.1em !important;
+	letter-spacing: 0.1em;
+}	
+
+input, textarea {
+	border-width: 3px !important;
 }

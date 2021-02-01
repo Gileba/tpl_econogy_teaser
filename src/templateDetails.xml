@@ -23,6 +23,7 @@
 		<position>verticaal</position>
 		<position>producten</position>
 		<position>statistieken</position>
+		<position>forms</position>
 		<position>footer</position>
 	</positions>
 </extension>
