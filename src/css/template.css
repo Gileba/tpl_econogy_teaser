@@ -176,6 +176,7 @@ body {
 .footer {
 	display: flex;
 	margin-top: 50px;
+	border-top: var(--primary-orange) 8px solid;
 }
 
 .footer div {
