@@ -284,12 +284,19 @@ body {
 	margin-block-start: 0;
 }
 
-.contact .cf-form-wrap .intro {
-	width: 50%;
+.contact .cf-form-wrap .cf-fields {
+	margin-top: 50px;
 }
 
-.contact .cf-form-wrap .cf-fields {
-	width: 50%;
+@media screen and (min-width: 900px) {
+	.contact .cf-form-wrap .intro {
+		width: 50%;
+	}
+
+	.contact .cf-form-wrap .cf-fields {
+		width: 50%;
+		margin-top: 0;
+	}
 }
 
 .convertforms .intro {
@@ -309,8 +316,10 @@ body {
 	font-size: 2em;
 }
 
-.newsletter .intro div {
-	width: 50%;
+@media screen and (min-width: 800px) {
+	.newsletter .intro div {
+		width: 50%;
+	}
 }
 
 .newsletter .cf-fields {
