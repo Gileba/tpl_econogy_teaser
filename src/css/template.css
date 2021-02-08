@@ -12,9 +12,24 @@ body {
 }
 
 .header .custom div {
-	background-size: cover;
 	background-position: top center;
+	background-size: cover;
 	min-height: 300px;
+}
+
+body:not(.mobile) .header .custom div {
+	background-attachment: fixed;
+}
+
+.header .custom div img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 40%;
+}
+
+body:not(.mobile) .header .custom img {
+	padding-top: 90px;
 }
 
 @media screen and (min-width: 800px) {
@@ -30,28 +45,52 @@ body {
 }
 
 .main {
-	margin: 0 100px 50px 100px;
+	margin: 0 50px 50px 50px;
 	letter-spacing: 0.1em;
+}
+
+.main .custom {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .main h1 {
 	letter-spacing: 0.2em;
 	text-align: center;
 	width: 100%;
-	margin: 50px auto;
-	font-size: 2.5em;
+	margin: 50px auto 30px;
+	font-size: 2em;
+}
+
+.main .custom div {
+	width: 100%;
+	margin: 20px 0 0 0;
 }
 
 @media screen and (min-width: 800px) {
+.main .custom div {
+	width: 45%;
+	min-width: 300px;
+	margin: 20px 0 0 0;
+}
+
+.main .custom div:nth-child(2) {
+	padding-right: 10px;
+}
+
+.main .custom div:nth-child(3) {
+	padding-left: 10px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+	.main {
+		margin: 0 100px 50px 100px;
+	}
 	.main h1 {
 		width: 60%;
-	}
-}
-
-@media screen and (min-width: 800px) {
-	.main .custom div {
-		column-count: 2;
-		column-gap: 70px;
+		font-size: 2.5em;
 	}
 }
 
@@ -95,7 +134,7 @@ body {
 .verticaal div.custom h2 {
 	text-align: right;
 	text-transform: lowercase;
-	font-size: 2.5em;
+	font-size: 2em;
 	font-weight: 600;
 	margin-block-start: 0.1em;
 	margin-block-end: 0;
@@ -104,14 +143,14 @@ body {
 .verticaal div.custom h3 {
 	opacity: 0.5;
 	text-transform: uppercase;
-	font-size: 4em;
+	font-size: 3em;
 	font-weight: 600;
 	margin-block-start: 0;
 	margin-block-end: 0.1em;
 }
 
 .verticaal div.custom div {
-	font-size: 1.8em;
+	font-size: 1.5em;
 	margin-bottom: 30px;
 }
 
@@ -122,18 +161,38 @@ body {
 	text-align: center;
 }
 
-.producten .custom {
-	margin-top: 50px;
+.verticaal div.custom div.icoon img {
+	max-width: 250px;
 }
 
+.producten {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 50px 0;
+}
+
+.producten div.custom {
+	min-width: 500px;
+	max-width:45%;
+}
+
+@media screen and (min-width: 1000px) {
+	.producten div.custom {
+		display: flex;
+	}
+	
+	.producten div.custom > div {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
 .producten .custom > div {
-	padding-top: 600px;
 	padding-bottom: 20px;
 }
 
 .product-container {
-	display: flex;
-	flex-wrap: wrap;
 	margin: 0 20px;
 	padding: 50px 20px;
 }
@@ -146,20 +205,30 @@ body {
 	background-color: var(--primary-green);
 }
 
-@media screen and (min-width: 800px) {
-	.product-container div {
-		max-width: 45%;
-	}
+.producten .logo {
+	text-align: center;
+	width: 100%;
 }
 
-.product-container .logo img {
-	max-width: 100%;
-	padding-bottom: 20px;
+.producten .logo img {
+	max-width: 60%;
+	padding: 50px 0;
+	transition: all .2s ease-in-out;
+}
+
+.producten .logo img:hover {
+	transform: scale(1.2);
+	
 }
 
 .product-container .text {
-	font-size: 1.8em;
+	font-size: 1.5em;
 	padding: 0 20px;
+}
+
+.product-container .image img {
+	max-width: 100%;
+	margin-top: 20px;
 }
 
 .statistieken {
@@ -215,6 +284,10 @@ body {
 	min-height: 60px;
 }
 
+.statistieken .xsmall {
+	font-size: 0.5em;
+}
+
 .footer {
 	display: flex;
 	flex-wrap: wrap;
@@ -249,18 +322,20 @@ body {
 
 .footer h4 {
 	margin-block-end: 0;
+}
+
+.footer .custom:not(.logo) {
 	padding-left: 25px;
 }
 
 .footer h4+div {
-	padding-left: 25px;
 	display: flex;
 	flex-wrap: wrap;
 }
 
 .footer h4+div div {
 	color: white;
-	min-width: 200px;
+	min-width: 240px;
 	max-width: 33%;
 	margin-bottom: 25px;
 }

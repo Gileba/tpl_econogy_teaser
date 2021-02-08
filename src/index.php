@@ -16,6 +16,30 @@
 	// Logo file or site title param
 	$sitename = htmlspecialchars($app->get('sitename'), ENT_QUOTES, 'UTF-8');
 
+/*
+*	Mobile device detection
+*/
+if( !function_exists('mobile_user_agent_switch') ){
+	function mobile_user_agent_switch(){
+		$device = '';
+		
+		if( stristr($_SERVER['HTTP_USER_AGENT'],'ipad') ) {
+			$device = "ipad";
+		} else if( stristr($_SERVER['HTTP_USER_AGENT'],'iphone') || strstr($_SERVER['HTTP_USER_AGENT'],'iphone') ) {
+			$device = "iphone";
+		} else if( stristr($_SERVER['HTTP_USER_AGENT'],'blackberry') ) {
+			$device = "blackberry";
+		} else if( stristr($_SERVER['HTTP_USER_AGENT'],'android') ) {
+			$device = "android";
+		}
+		
+		if( $device ) {
+			return "mobile"; 
+		} return false; {
+			return false;
+		}
+	}
+}
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +64,7 @@
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
 		<link rel="stylesheet" href="https://use.typekit.net/wbb6jqc.css">
 	</head>
-	<body class="<?php echo $pageclass ? htmlspecialchars($pageclass) : 'default'; ?>">
+	<body class="<?php echo $pageclass ? htmlspecialchars($pageclass) : 'default'; ?> <?php echo mobile_user_agent_switch(); ?>">
 <!-- Google Tag Manager (noscript) -->
 		<noscript>
 			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLF5NX7" height="0" width="0" style="display:none;visibility:hidden"></iframe>
