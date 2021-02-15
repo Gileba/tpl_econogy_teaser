@@ -7,7 +7,7 @@
 @font-face {
 	font-family: 'Font Awesome 5 Brands';
 	font-style: normal;
-	font-weight: 400;
+	font-weight: normal;
 	font-display: block;
 	src:url("../webfonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../webfonts/fontawesome/fa-brands-400.woff") format("woff");
 }
@@ -196,21 +196,21 @@ body {
 	border-radius: 15px;
 }
 
-.product-container {
+.producten .product-container {
 	margin: 0 20px;
 	padding: 50px 20px;
 	border-radius: 15px;
 }
 
-.product-container img {
+.producten .product-container img {
 	border-radius: 15px;
 }
 
-.product-container.orange {
+.producten .product-container.orange {
 	background-color: var(--primary-orange);
 }
 
-.product-container.green {
+.producten .product-container.green {
 	background-color: var(--primary-green);
 }
 
@@ -230,15 +230,15 @@ body {
 
 }
 
-.product-container .text {
+.producten .product-container .text {
 	padding: 0 20px;
 }
 
-.product-container .image {
+.producten .product-container .image {
 	text-align: center;
 }
 
-.product-container .image img {
+.producten .product-container .image img {
 	max-width: 90%;
 	margin-top: 20px;
 }
