@@ -5,11 +5,11 @@
 }
 
 @font-face {
-	  font-family: 'Font Awesome 5 Brands';
-	  font-style: normal;
-	  font-weight: 400;
-	  font-display: block;
-	  src:url("../webfonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../webfonts/fontawesome/fa-brands-400.woff") format("woff");
+	font-family: 'Font Awesome 5 Brands';
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src:url("../webfonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../webfonts/fontawesome/fa-brands-400.woff") format("woff");
 }
 
 body {
@@ -53,7 +53,7 @@ body:not(.mobile) .header .custom img {
 }
 
 .main {
-	margin: 0 50px 50px 50px;
+	margin: 0 50px 50px;
 	letter-spacing: 0.1em;
 }
 
@@ -73,28 +73,28 @@ body:not(.mobile) .header .custom img {
 
 .main .custom div {
 	width: 100%;
-	margin: 20px 0 0 0;
+	margin: 20px 0 0;
 }
 
 @media screen and (min-width: 800px) {
-.main .custom div {
-	width: 45%;
-	min-width: 300px;
-	margin: 20px 0 0 0;
-}
+	.main .custom div {
+		width: 45%;
+		min-width: 300px;
+		margin: 20px 0 0;
+	}
 
-.main .custom div:nth-child(2) {
-	padding-right: 10px;
-}
+	.main .custom div:nth-child(2) {
+		padding-right: 10px;
+	}
 
-.main .custom div:nth-child(3) {
-	padding-left: 10px;
-}
+	.main .custom div:nth-child(3) {
+		padding-left: 10px;
+	}
 }
 
 @media screen and (min-width: 1200px) {
 	.main {
-		margin: 0 100px 50px 100px;
+		margin: 0 100px 50px;
 	}
 	.main h1 {
 		width: 60%;
@@ -118,9 +118,9 @@ body:not(.mobile) .header .custom img {
 .verticaal div.custom {
 	background-color: var(--primary-green);
 	color: white;
-	min-width: 360px;	
+	min-width: 360px;
 	max-width: 100%;
-	padding: 10px 20px 0px 20px;
+	padding: 10px 20px 0px;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
@@ -186,7 +186,7 @@ body:not(.mobile) .header .custom img {
 	.producten div.custom {
 		display: flex;
 	}
-	
+
 	.producten div.custom > div {
 		display: flex;
 		flex-direction: column;
@@ -235,7 +235,7 @@ body:not(.mobile) .header .custom img {
 
 .producten .logo img:hover {
 	transform: scale(1.2);
-	
+
 }
 
 .product-container .text {
@@ -260,7 +260,7 @@ body:not(.mobile) .header .custom img {
 	font-size: 1.3em;
 	min-width: 360px;
 	width: 100%;
-	padding: 10px 20px 0px 20px;
+	padding: 10px 20px 0px;
 }
 
 @media screen and (min-width: 800px) {
@@ -331,7 +331,7 @@ body:not(.mobile) .header .custom img {
 	.footer .custom.logo {
 		max-width: 25%;
 	}
-	
+
 	.footer .custom {
 		max-width: 65%;
 	}
@@ -474,7 +474,7 @@ body:not(.mobile) .header .custom img {
 input, button, textarea {
 	font-size: 1.1em !important;
 	letter-spacing: 0.1em;
-}	
+}
 
 input, textarea {
 	border-width: 3px !important;
