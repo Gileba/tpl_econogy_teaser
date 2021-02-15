@@ -7,7 +7,7 @@
 @font-face {
 	font-family: 'Font Awesome 5 Brands';
 	font-style: normal;
-	font-weight: 400;
+	font-weight: normal;
 	font-display: block;
 	src:url("../webfonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../webfonts/fontawesome/fa-brands-400.woff") format("woff");
 }
@@ -19,14 +19,19 @@ body {
 	color: var(--primary-black);
 }
 
+.producten .product-container .image {
+	text-align: center;
+}
+
+.producten .product-container .image img {
+	max-width: 90%;
+	margin-top: 20px;
+}
+
 .header .custom div {
 	background-position: top center;
 	background-size: cover;
 	min-height: 300px;
-}
-
-body:not(.mobile) .header .custom div {
-	background-attachment: fixed;
 }
 
 .header .custom div img {
@@ -34,10 +39,6 @@ body:not(.mobile) .header .custom div {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 40%;
-}
-
-body:not(.mobile) .header .custom img {
-	padding-top: 90px;
 }
 
 @media screen and (min-width: 800px) {
@@ -169,10 +170,6 @@ body:not(.mobile) .header .custom img {
 	text-align: center;
 }
 
-.verticaal div.custom div.icoon img {
-	max-width: 200px;
-}
-
 .producten {
 	margin: 50px 100px;
 }
@@ -204,21 +201,21 @@ body:not(.mobile) .header .custom img {
 	border-radius: 15px;
 }
 
-.product-container {
+.producten .product-container {
 	margin: 0 20px;
 	padding: 50px 20px;
 	border-radius: 15px;
 }
 
-.product-container img {
+.producten .product-container img {
 	border-radius: 15px;
 }
 
-.product-container.orange {
+.producten .product-container.orange {
 	background-color: var(--primary-orange);
 }
 
-.product-container.green {
+.producten .product-container.green {
 	background-color: var(--primary-green);
 }
 
@@ -238,17 +235,8 @@ body:not(.mobile) .header .custom img {
 
 }
 
-.product-container .text {
+.producten .product-container .text {
 	padding: 0 20px;
-}
-
-.product-container .image {
-	text-align: center;
-}
-
-.product-container .image img {
-	max-width: 90%;
-	margin-top: 20px;
 }
 
 .statistieken {
@@ -281,7 +269,7 @@ body:not(.mobile) .header .custom img {
 	}
 }
 
-.statistieken h3 {
+.statistieken div.custom h3 {
 	color: var(--primary-green);
 	font-size: 2em;
 	font-weight: 600;
@@ -463,6 +451,18 @@ body:not(.mobile) .header .custom img {
 
 .contact div[data-type="submit"] {
 	padding: 3px;
+}
+
+body:not(.mobile) .header .custom div {
+	background-attachment: fixed;
+}
+
+body:not(.mobile) .header .custom img {
+	padding-top: 90px;
+}
+
+.verticaal div.custom div.icoon img {
+	max-width: 200px;
 }
 
 .social {
