@@ -70,7 +70,8 @@ if(!function_exists('mobile_user_agent_switch')){
 	<body class="<?php echo $pageclass ? htmlspecialchars($pageclass) : 'default'; ?> <?php echo mobile_user_agent_switch(); ?>">
 <!-- Google Tag Manager (noscript) -->
 		<noscript>
-			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLF5NX7" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLF5NX7" height="0" width="0" style="display:none; visibility:hidden;">
+			</iframe>
 		</noscript>
 <!-- End Google Tag Manager (noscript) -->
 		<div class="container">

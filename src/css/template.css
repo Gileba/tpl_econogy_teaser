@@ -170,10 +170,6 @@ body {
 	text-align: center;
 }
 
-.verticaal div.custom div.icoon img {
-	max-width: 200px;
-}
-
 .producten {
 	margin: 50px 100px;
 }
@@ -463,6 +459,10 @@ body:not(.mobile) .header .custom div {
 
 body:not(.mobile) .header .custom img {
 	padding-top: 90px;
+}
+
+.verticaal div.custom div.icoon img {
+	max-width: 200px;
 }
 
 .social {
