@@ -61,8 +61,10 @@ if( !function_exists('mobile_user_agent_switch') ){
 		</script>
 <!-- End Google Tag Manager -->
 		<jdoc:include type="head" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
 		<link rel="stylesheet" href="https://use.typekit.net/wbb6jqc.css">
+		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/fontawesome.min.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/brands.min.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
 	</head>
 	<body class="<?php echo $pageclass ? htmlspecialchars($pageclass) : 'default'; ?> <?php echo mobile_user_agent_switch(); ?>">
 <!-- Google Tag Manager (noscript) -->
@@ -96,5 +98,8 @@ if( !function_exists('mobile_user_agent_switch') ){
 				<jdoc:include type="modules" name="footer" />
 			</div>
 		</div>
+		<!-- Start of HubSpot Embed Code -->
+		<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9250135.js"></script>
+		<!-- End of HubSpot Embed Code -->
 	</body>
 </html>
