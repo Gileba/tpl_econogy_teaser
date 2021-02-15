@@ -4,6 +4,14 @@
 	--primary-black: rgb(11, 10, 13)
 }
 
+@font-face {
+	font-family: 'Font Awesome 5 Brands';
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src:url("../webfonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../webfonts/fontawesome/fa-brands-400.woff") format("woff");
+}
+
 body {
 	font-family: "regulator-nova";
 	font-weight: 600;
@@ -37,7 +45,7 @@ body {
 }
 
 .main {
-	margin: 0 50px 50px 50px;
+	margin: 0 50px 50px;
 	letter-spacing: 0.1em;
 }
 
@@ -57,28 +65,28 @@ body {
 
 .main .custom div {
 	width: 100%;
-	margin: 20px 0 0 0;
+	margin: 20px 0 0;
 }
 
 @media screen and (min-width: 800px) {
-.main .custom div {
-	width: 45%;
-	min-width: 300px;
-	margin: 20px 0 0 0;
-}
+	.main .custom div {
+		width: 45%;
+		min-width: 300px;
+		margin: 20px 0 0;
+	}
 
-.main .custom div:nth-child(2) {
-	padding-right: 10px;
-}
+	.main .custom div:nth-child(2) {
+		padding-right: 10px;
+	}
 
-.main .custom div:nth-child(3) {
-	padding-left: 10px;
-}
+	.main .custom div:nth-child(3) {
+		padding-left: 10px;
+	}
 }
 
 @media screen and (min-width: 1200px) {
 	.main {
-		margin: 0 100px 50px 100px;
+		margin: 0 100px 50px;
 	}
 	.main h1 {
 		width: 60%;
@@ -86,7 +94,7 @@ body {
 	}
 }
 
-.verticaal, .statistieken {
+.verticaal, .statistieken, .producten {
 	display: flex;
 	margin: 0 100px;
 	flex-wrap: wrap;
@@ -94,7 +102,7 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
-	.verticaal, .statistieken {
+	.verticaal, .statistieken, .producten {
 		justify-content: space-evenly;
 	}
 }
@@ -102,13 +110,14 @@ body {
 .verticaal div.custom {
 	background-color: var(--primary-green);
 	color: white;
-	min-width: 360px;	
+	min-width: 360px;
 	max-width: 100%;
-	padding: 10px 20px 0px 20px;
+	padding: 10px 20px 0px;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
 	margin-top: 50px;
+	border-radius: 15px;
 }
 
 @media screen and (min-width: 800px) {
@@ -135,14 +144,13 @@ body {
 .verticaal div.custom h3 {
 	opacity: 0.5;
 	text-transform: uppercase;
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: 600;
 	margin-block-start: 0;
 	margin-block-end: 0.1em;
 }
 
 .verticaal div.custom div {
-	font-size: 1.5em;
 	margin-bottom: 30px;
 }
 
@@ -154,39 +162,48 @@ body {
 }
 
 .verticaal div.custom div.icoon img {
-	max-width: 250px;
+	max-width: 200px;
 }
 
 .producten {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	margin: 50px 0;
+	margin: 50px 100px;
 }
 
 .producten div.custom {
 	min-width: 500px;
-	max-width:45%;
+	max-width: 45%;
 }
 
 @media screen and (min-width: 1000px) {
 	.producten div.custom {
 		display: flex;
 	}
-	
+
 	.producten div.custom > div {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	.producten .custom:nth-child(2) {
+		margin-top: 50px;
+	}
+}
 .producten .custom > div {
 	padding-bottom: 20px;
+	border-radius: 15px;
 }
 
 .product-container {
 	margin: 0 20px;
 	padding: 50px 20px;
+	border-radius: 15px;
+}
+
+.product-container img {
+	border-radius: 15px;
 }
 
 .product-container.orange {
@@ -203,23 +220,26 @@ body {
 }
 
 .producten .logo img {
-	max-width: 60%;
+	max-width: 55%;
 	padding: 50px 0;
 	transition: all .2s ease-in-out;
 }
 
 .producten .logo img:hover {
 	transform: scale(1.2);
-	
+
 }
 
 .product-container .text {
-	font-size: 1.5em;
 	padding: 0 20px;
 }
 
+.product-container .image {
+	text-align: center;
+}
+
 .product-container .image img {
-	max-width: 100%;
+	max-width: 90%;
 	margin-top: 20px;
 }
 
@@ -230,8 +250,9 @@ body {
 
 .statistieken div.custom {
 	font-size: 1.3em;
+	min-width: 360px;
 	width: 100%;
-	padding: 10px 20px 0px 20px;
+	padding: 10px 20px 0px;
 }
 
 @media screen and (min-width: 800px) {
@@ -302,7 +323,7 @@ body {
 	.footer .custom.logo {
 		max-width: 25%;
 	}
-	
+
 	.footer .custom {
 		max-width: 65%;
 	}
@@ -376,11 +397,11 @@ body {
 
 .convertforms .intro h1 {
 	letter-spacing: 0.1em;
-	font-size: 3em;
+	font-size: 2.5em;
 }
 
 .convertforms .intro div {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 @media screen and (min-width: 800px) {
@@ -401,6 +422,7 @@ body {
 .newsletter .cf-fields .cf-control-group {
 	padding: 3px;
 	width: auto;
+	min-width: auto;
 }
 
 .newsletter  .cf-fields .cf-control-group.email {
@@ -443,11 +465,26 @@ body:not(.mobile) .header .custom img {
 	padding-top: 90px;
 }
 
+.social {
+	color: white;
+	margin-right: 10px;
+	font-size: 1.8em;
+}
+
 input, button, textarea {
 	font-size: 1.1em !important;
 	letter-spacing: 0.1em;
-}	
+}
 
 input, textarea {
 	border-width: 3px !important;
+}
+
+/* OVERRIDES */
+.cc-revoke, .cc-window {
+	font-family: "regulator-nova";
+}
+
+.cc-revoke.cc-right {
+	right: 1em;
 }
