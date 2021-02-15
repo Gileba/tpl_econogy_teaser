@@ -19,6 +19,15 @@ body {
 	color: var(--primary-black);
 }
 
+.producten .product-container .image {
+	text-align: center;
+}
+
+.producten .product-container .image img {
+	max-width: 90%;
+	margin-top: 20px;
+}
+
 .header .custom div {
 	background-position: top center;
 	background-size: cover;
@@ -232,15 +241,6 @@ body {
 
 .producten .product-container .text {
 	padding: 0 20px;
-}
-
-.producten .product-container .image {
-	text-align: center;
-}
-
-.producten .product-container .image img {
-	max-width: 90%;
-	margin-top: 20px;
 }
 
 .statistieken {
